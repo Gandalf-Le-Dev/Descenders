@@ -18,7 +18,8 @@ public class LevelGeneration : MonoBehaviour
     private List<Vector2> loadedRooms = new List<Vector2>();
     [SerializeField] private float roomGenDelayTimer = 0.25f;
 
-    private bool firstStageDone = false;
+    public static bool firstStageDone = false;
+    public static bool readyForPlayer = false;
 
     private int direction; // 0 & 1: Right, 2 & 3: Left, 4: Down
     private float delay = 0f;
@@ -28,6 +29,8 @@ public class LevelGeneration : MonoBehaviour
 
     private void Start()
     {
+        firstStageDone = false;
+        readyForPlayer = false;
         roomArray = new GameObject[levelWidth, levelHeight];
         Random.InitState(seed);
         transform.position = new Vector2(Random.Range(0, levelWidth), 0);
