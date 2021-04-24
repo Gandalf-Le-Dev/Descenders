@@ -25,13 +25,14 @@ public class LevelGeneration : MonoBehaviour
     private float delay = 0f;
     private float completionTime = 0f;
 
-    private int seed;
+    [SerializeField] private int seed;
 
     private void Start()
     {
         firstStageDone = false;
         readyForPlayer = false;
         roomArray = new GameObject[levelWidth, levelHeight];
+        seed = Random.Range(0, 2147483647);
         Random.InitState(seed);
         transform.position = new Vector2(Random.Range(0, levelWidth), 0);
         CreateRoom(startingRooms[0]);
@@ -120,6 +121,7 @@ public class LevelGeneration : MonoBehaviour
                     CreateRoom(endingRooms[0]);
                     FillMap();
                     firstStageDone = true;
+                    readyForPlayer = true;
                     Debug.Log("Completion Time in seconds: " + completionTime + " seconds" + "\n" + "Completion Time in milliseconds: " + completionTime * 1000);
                 }
             }

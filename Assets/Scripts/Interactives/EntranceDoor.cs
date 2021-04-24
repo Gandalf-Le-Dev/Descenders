@@ -11,14 +11,12 @@ public class EntranceDoor : MonoBehaviour
 
     private void Update()
     {
-        if (player != null)
+        if (LevelGeneration.readyForPlayer && hasPlayerSpawned == false)
         {
-            if (LevelGeneration.readyForPlayer && hasPlayerSpawned == false)
-            {
-                // Spawn in player object
-                Instantiate(player, spawnPos);
-                hasPlayerSpawned = true;
-            }
+            Debug.LogWarning("Player spawn");
+            // Spawn in player object
+            Instantiate(player, spawnPos);
+            hasPlayerSpawned = true;
         }
     }
 }
