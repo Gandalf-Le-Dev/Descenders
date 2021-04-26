@@ -13,8 +13,7 @@ public class EntranceDoor : MonoBehaviour
     {
         if (LevelGeneration.readyForPlayer && hasPlayerSpawned == false)
         {
-            Debug.LogWarning("Player spawn");
-            // Spawn in player object
+            // Spawn player object
             Instantiate(player, spawnPos.position, Quaternion.identity, transform.root.parent);
             hasPlayerSpawned = true;
         }

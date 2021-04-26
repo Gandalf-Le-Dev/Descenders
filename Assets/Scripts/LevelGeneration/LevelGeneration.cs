@@ -9,6 +9,7 @@ public class LevelGeneration : MonoBehaviour
     [SerializeField] private int levelWidth;
     [SerializeField] private int levelHeight;
     [SerializeField] private int scale;
+    [SerializeField] private Transform roomContainer;
     [SerializeField] private GameObject[] startingRooms;
     [SerializeField] private GameObject[] pathRooms; //Critical path rooms 0:LR, 1:LRB, 2:LRT, 3:LRTB
     [SerializeField] private GameObject[] fillerRooms;
@@ -16,6 +17,7 @@ public class LevelGeneration : MonoBehaviour
 
     private GameObject[,] roomArray;
     private List<Vector2> loadedRooms = new List<Vector2>();
+    
     [SerializeField] private float roomGenDelayTimer = 0.25f;
 
     public static bool firstStageDone = false;
@@ -32,9 +34,9 @@ public class LevelGeneration : MonoBehaviour
         firstStageDone = false;
         readyForPlayer = false;
         roomArray = new GameObject[levelWidth, levelHeight];
-        seed = Random.Range(0, 2147483647);
+        seed = Random.Range(0, int.MaxValue);
         Random.InitState(seed);
-        transform.position = new Vector2(Random.Range(0, levelWidth), 0);
+        transform.position = new Vector2(Random.Range(0, levelWidth + 1), 0);
         CreateRoom(startingRooms[0]);
         if (transform.position.x == 0)
             direction = 0;
@@ -123,18 +125,22 @@ public class LevelGeneration : MonoBehaviour
                     firstStageDone = true;
                     readyForPlayer = true;
                     Debug.Log("Completion Time in seconds: " + completionTime + " seconds" + "\n" + "Completion Time in milliseconds: " + completionTime * 1000);
+                    Destroy(gameObject);
                 }
             }
         }
         else
         {
-            delay -= Time.deltaTime;
+            if (firstStageDone == false)
+            {
+                delay -= Time.deltaTime;
+            }
         }
     }
 
     private void CreateRoom(GameObject room)
     {
-        GameObject temp = Instantiate(room, transform.position * scale, Quaternion.identity);
+        GameObject temp = Instantiate(room, transform.position * scale, Quaternion.identity, roomContainer);
         int x = (int)transform.position.x;
         int y = -(int)transform.position.y;
         roomArray[x, y] = temp;
@@ -161,5 +167,19 @@ public class LevelGeneration : MonoBehaviour
     private GameObject GetRoom(Vector2 pos)
     {
         return roomArray[(int)pos.x, -(int)pos.y];
+    }
+
+    public int getLevelWidth()
+    {
+        return levelWidth;
+    }
+    public int getLevelHeigth()
+    {
+        return levelHeight;
+    }
+
+    public int getScale()
+    {
+        return scale;
     }
 }
