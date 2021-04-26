@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     protected bool crouched;
     protected Vector2 groundNormal;
     protected Rigidbody2D rb;
+    protected SpriteRenderer sprite;
     protected Vector2 velocity;
     protected ContactFilter2D contactFilter;
     protected RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Start()

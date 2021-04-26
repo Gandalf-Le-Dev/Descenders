@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7843005370242775013}
   - component: {fileID: 7843005370242774810}
   - component: {fileID: 7843005370242774808}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7843005372176268270}
   - component: {fileID: 7843005372176268271}
   - component: {fileID: 7843005372176268265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,15 +155,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -4709456396536258026, guid: 3c7fd03cf0a03be4a9235d10a9f373a9, type: 3}
+  m_SortingLayerID: 1560814393
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -1848323404289222765, guid: ffe19f1cd1cc3334dbabae1c32b0b61d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -203,18 +203,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.032283187, y: -0.21913424}
+  m_Offset: {x: -0.03179443, y: 0.0012691915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.56368804, y: 0.5617315}
+  m_Size: {x: 0.43553293, y: 0.6204013}
   m_EdgeRadius: 0
 --- !u!114 &7843005372176268265
 MonoBehaviour:

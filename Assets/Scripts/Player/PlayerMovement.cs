@@ -17,7 +17,8 @@ public class PlayerMovement : PlayerController
 
     private void UpdatePlayer()
     {
-        // TODO: Convert to the new iput system
+        UpdatePlayerFacing();
+        // TODO: Convert to the new input system
         float pSpeed = Input.GetAxis("Horizontal");
 
         Vector2 move = Vector2.zero;
@@ -52,9 +53,16 @@ public class PlayerMovement : PlayerController
             crouched = false;
         }
 
-        if (move.x > 0)
+        if (velocity.x > 0)
+            facingRight = true;
+        else if (velocity.x < 0) 
             facingRight = false;
 
         targetVelocity = move * playerSpeed;
+    }
+    
+    private void UpdatePlayerFacing()
+    {
+        sprite.flipX = !facingRight;
     }
 }

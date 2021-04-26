@@ -15,7 +15,7 @@ public class EntranceDoor : MonoBehaviour
         {
             Debug.LogWarning("Player spawn");
             // Spawn in player object
-            Instantiate(player, spawnPos);
+            Instantiate(player, spawnPos.position, Quaternion.identity, transform.root.parent);
             hasPlayerSpawned = true;
         }
     }
