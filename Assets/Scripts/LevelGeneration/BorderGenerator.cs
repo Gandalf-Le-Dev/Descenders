@@ -46,33 +46,33 @@ public class BorderGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position == posTR.position)
-        {
-            direction = Vector3.down;
-        }
+        // if (transform.position == posTR.position)
+        // {
+        //     direction = Vector3.down;
+        // }
+        //
+        // if (transform.position == posBR.position)
+        // {
+        //     direction = Vector3.left;
+        // }
+        //
+        // if (transform.position == posBL.position)
+        // {
+        //     direction = Vector3.up;
+        // }
+        //
+        // if (transform.position == posEnd.position)
+        // {
+        //     Destroy(gameObject);
+        // }
         
-        if (transform.position == posBR.position)
-        {
-            direction = Vector3.left;
-        }
-        
-        if (transform.position == posBL.position)
-        {
-            direction = Vector3.up;
-        }
-
-        if (transform.position == posEnd.position)
-        {
-            Destroy(gameObject);
-        }
-        
-        moveBorderGenerator();
+        // moveBorderGenerator();
         
     }
 
-    private void moveBorderGenerator()
-    {
-        transform.position += direction;
-        Instantiate(borderObject, transform.position, quaternion.identity, borderContainer);
-    }
+    // private void moveBorderGenerator()
+    // {
+    //     transform.position += direction;
+    //     Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer);
+    // }
 }
