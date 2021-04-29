@@ -5,11 +5,25 @@ using UnityEngine;
 
 public class BorderWalker : MonoBehaviour
 {
+    [SerializeField] private LevelGeneration levelGenerator;
+
     [SerializeField] private Transform borderContainer;
     [SerializeField] private GameObject borderObject;
 
+    /*
+     * Move this to a singleton ?
+     */
+    [SerializeField] private Transform posTL;
+    [SerializeField] private Transform posTR;
+    [SerializeField] private Transform posBL;
+    [SerializeField] private Transform posBR;
+
+    private int scale;
+    private int width;
+    private int height;
+
     private Vector3 walkDirection;
-    
+
     public enum Direction
     {
         Up,
@@ -19,29 +33,36 @@ public class BorderWalker : MonoBehaviour
     };
 
     public Direction direction;
-    
+
     void Start()
     {
+        /*
+         * Check directions
+         */
         if (direction == Direction.Up)
         {
+            transform.position = posBL.position;
             walkDirection = Vector2.up;
             drawDirectionLine(walkDirection);
         }
-        
+
         if (direction == Direction.Down)
         {
+            transform.position = posTR.position;
             walkDirection = Vector2.down;
             drawDirectionLine(walkDirection);
         }
-        
+
         if (direction == Direction.Left)
         {
+            transform.position = posBR.position;
             walkDirection = Vector2.left;
             drawDirectionLine(walkDirection);
         }
-        
+
         if (direction == Direction.Right)
         {
+            transform.position = posTL.position;
             walkDirection = Vector2.right;
             drawDirectionLine(walkDirection);
         }
@@ -52,6 +73,13 @@ public class BorderWalker : MonoBehaviour
     {
         transform.position += walkDirection;
         Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer);
+
+        /*
+         * Check position to destroy object
+         */
+        if (transform.position == posTL.position || transform.position == posTR.position ||
+            transform.position == posBL.position || transform.position == posBR.position)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -70,6 +98,4 @@ public class BorderWalker : MonoBehaviour
         pos2 = pos + (dir * 10);
         Debug.DrawLine(pos, pos2);
     }
-    
 }
-

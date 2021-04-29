@@ -14,7 +14,7 @@ public class BorderGenerator : MonoBehaviour
 
     [SerializeField] private LevelGeneration levelGenerator;
     
-    [SerializeField] private Transform posStart;
+    [SerializeField] private Transform posTL;
     [SerializeField] private Transform posTR;
     [SerializeField] private Transform posBL;
     [SerializeField] private Transform posBR;
@@ -22,6 +22,8 @@ public class BorderGenerator : MonoBehaviour
 
     [SerializeField] private Transform borderContainer;
     [SerializeField] private GameObject borderObject;
+    [SerializeField] private GameObject walker;
+
 
     private void Start()
     {
@@ -35,44 +37,42 @@ public class BorderGenerator : MonoBehaviour
         /*
          * Setup corner transform
          */
-        posStart.position = new Vector2(-1, 1);
+        posTL.position = new Vector2(-1, 1);
         posTR.position = new Vector2(width * scale, 1);
         posBL.position = new Vector2(-1, - (height * scale));
         posBR.position = new Vector2(width * scale, - (height * scale));
-        
-        transform.position = posStart.position;
-        posEnd.position = new Vector2(posStart.position.x, posStart.position.y - 1);
+        posEnd.position = new Vector2(posTL.position.x, posTR.position.y - 1);
     }
 
     private void Update()
     {
-        // if (transform.position == posTR.position)
-        // {
-        //     direction = Vector3.down;
-        // }
-        //
-        // if (transform.position == posBR.position)
-        // {
-        //     direction = Vector3.left;
-        // }
-        //
-        // if (transform.position == posBL.position)
-        // {
-        //     direction = Vector3.up;
-        // }
-        //
-        // if (transform.position == posEnd.position)
-        // {
-        //     Destroy(gameObject);
-        // }
+        if (transform.position == posTR.position)
+        {
+            direction = Vector3.down;
+        }
+
+        if (transform.position == posBR.position)
+        {
+            direction = Vector3.left;
+        }
+
+        if (transform.position == posBL.position)
+        {
+            direction = Vector3.up;
+        }
+
+        if (transform.position == posEnd.position)
+        {
+            Destroy(gameObject);
+        }
         
-        // moveBorderGenerator();
+        moveBorderGenerator();
         
     }
 
-    // private void moveBorderGenerator()
-    // {
-    //     transform.position += direction;
-    //     Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer);
-    // }
+    private void moveBorderGenerator()
+    {
+        transform.position += direction;
+        Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer);
+    }
 }
