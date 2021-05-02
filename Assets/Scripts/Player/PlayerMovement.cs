@@ -13,6 +13,7 @@ public class PlayerMovement : PlayerController
     private void Update()
     {
         UpdatePlayer();
+        ChangeCam();
     }
 
     private void UpdatePlayer()
@@ -64,5 +65,18 @@ public class PlayerMovement : PlayerController
     private void UpdatePlayerFacing()
     {
         sprite.flipX = !facingRight;
+    }
+
+    private void ChangeCam()
+    {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            mainCamera.orthographicSize = 8;
+        }
+
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            mainCamera.orthographicSize = 25;
+        }
     }
 }

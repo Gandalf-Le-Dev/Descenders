@@ -22,10 +22,13 @@ public class PlayerController : MonoBehaviour
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
 
+    protected Camera mainCamera;
+
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        mainCamera = FindObjectOfType<Camera>();
     }
 
     private void Start()
@@ -104,5 +107,4 @@ public class PlayerController : MonoBehaviour
         }
         rb.position = rb.position + move.normalized * distance;
     }
- 
 }

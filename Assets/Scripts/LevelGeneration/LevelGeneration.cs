@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
 public class LevelGeneration : MonoBehaviour
@@ -9,11 +10,12 @@ public class LevelGeneration : MonoBehaviour
     [SerializeField] private int levelWidth;
     [SerializeField] private int levelHeight;
     [SerializeField] private int scale;
-    [SerializeField] private Transform roomContainer;
     [SerializeField] private GameObject[] startingRooms;
     [SerializeField] private GameObject[] pathRooms; //Critical path rooms 0:LR, 1:LRB, 2:LRT, 3:LRTB
     [SerializeField] private GameObject[] fillerRooms;
     [SerializeField] private GameObject[] endingRooms;
+
+    private Transform roomContainer;
 
     private GameObject[,] roomArray;
     private List<Vector2> loadedRooms = new List<Vector2>();
@@ -27,17 +29,41 @@ public class LevelGeneration : MonoBehaviour
     private float delay = 0f;
     private float completionTime = 0f;
 
+    private Tilemap tilemap;
+
+    [SerializeField] private bool customSeed = false;
     [SerializeField] private int seed;
 
     private void Start()
     {
+        roomContainer = GameObject.Find("RoomContainer").transform;
+
+        tilemap = FindObjectOfType<Tilemap>();
+        tilemap.ClearAllTiles();
+
         firstStageDone = false;
         readyForPlayer = false;
+
         roomArray = new GameObject[levelWidth, levelHeight];
-        seed = Random.Range(0, int.MaxValue);
+
+        if(customSeed == false)
+            seed = Random.Range(0, int.MaxValue);
+
         Random.InitState(seed);
-        transform.position = new Vector2(Random.Range(0, levelWidth + 1), 0);
+
+        transform.position = new Vector2(Random.Range(0, levelWidth), 0);
+        Debug.Log(transform.position);
+        /*
+         * Makes sure that their is no children in roomContainer
+         */
+        if (roomContainer.childCount > 1)
+        {
+            foreach (Transform child in roomContainer.transform) {
+                Destroy(child.gameObject);
+            }
+        }
         CreateRoom(startingRooms[0]);
+
         if (transform.position.x == 0)
             direction = 0;
         else if (transform.position.x == levelWidth - 1)

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1412559096639849998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1412559096639849997}
+  - component: {fileID: 1412559096639849996}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1412559096639849997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412559096639849998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412559096639849996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412559096639849998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba33cb79ebec8a41bb02540300aaea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelWidth: 7
+  levelHeight: 7
+  scale: 10
+  roomContainer: {fileID: 0}
+  startingRooms:
+  - {fileID: 6883211529688409317, guid: 009a3ed57cf3fbd458ac12ee2974947c, type: 3}
+  pathRooms:
+  - {fileID: 3533434933684541493, guid: ea5d435dd6a714b4b9ad2c73fd7eeeea, type: 3}
+  - {fileID: 4522060045057900704, guid: ba2a2ab0adc4a0740a1f613997d78039, type: 3}
+  - {fileID: 3209418034434473548, guid: d472c1ed27ee6e44ab7aa5efc4efb69d, type: 3}
+  - {fileID: 6728699039738687974, guid: 97339dd4e65a3344eb10587ab743b5cd, type: 3}
+  fillerRooms:
+  - {fileID: 4186368881736879259, guid: 911f6284bd59a87408bb13db68394499, type: 3}
+  endingRooms:
+  - {fileID: 3777610113651677224, guid: 90a22fe2898481943bb0095d399ab96d, type: 3}
+  roomGenDelayTimer: 0
+  seed: 0
