@@ -72,7 +72,7 @@ public class BorderWalker : MonoBehaviour
     void Update()
     {
         transform.position += walkDirection;
-        DontDestroyOnLoad(Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer));
+        Instantiate(borderObject, transform.position, Quaternion.identity, borderContainer);
 
         /*
          * Check position to destroy object

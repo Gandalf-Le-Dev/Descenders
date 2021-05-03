@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -22,13 +23,13 @@ public class PlayerController : MonoBehaviour
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
 
-    protected Camera mainCamera;
+    protected CinemachineVirtualCamera mainCamera;
 
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-        mainCamera = FindObjectOfType<Camera>();
+        mainCamera = FindObjectOfType<CinemachineVirtualCamera>();
     }
 
     private void Start()
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter.useLayerMask = true;
+
+        mainCamera.Follow = transform;
     }
 
     private void Update()

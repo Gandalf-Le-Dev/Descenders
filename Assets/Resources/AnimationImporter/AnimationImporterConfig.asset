@@ -29,4 +29,4 @@ MonoBehaviour:
   _animationControllersTargetLocation:
     _locationType: 0
     _globalDirectory: Assets
-  _spriteNamingScheme: 2
+  _spriteNamingScheme: 0

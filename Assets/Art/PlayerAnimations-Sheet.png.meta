@@ -1,118 +1,118 @@
 fileFormatVersion: 2
-guid: ffe19f1cd1cc3334dbabae1c32b0b61d
+guid: 4225ff4f0c1819b44a03cf7f61476b0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3478561689882829276
-    second: PlayerAnimations_Run_1
+      213: -3046871681649910805
+    second: PlayerAnimations-Sheet_0
   - first:
-      213: 38723737358374882
-    second: PlayerAnimations_Run_2
+      213: -18460918667399808
+    second: PlayerAnimations-Sheet_1
   - first:
-      213: 7061944729204662771
-    second: PlayerAnimations_Run_3
+      213: 6173244598097021220
+    second: PlayerAnimations-Sheet_2
   - first:
-      213: 8146193290460339292
-    second: PlayerAnimations_Run_4
+      213: 2054072012091530398
+    second: PlayerAnimations-Sheet_3
   - first:
-      213: -6597120556402969441
-    second: PlayerAnimations_Run_5
+      213: 7298452612926039013
+    second: PlayerAnimations-Sheet_4
   - first:
-      213: -2579587763064527721
-    second: PlayerAnimations_Idle_1
+      213: 3356501800269378418
+    second: PlayerAnimations-Sheet_5
   - first:
-      213: -8388605854517112846
-    second: PlayerAnimations_Idle_2
+      213: 1669682048131046483
+    second: PlayerAnimations-Sheet_6
   - first:
-      213: 339565317219088770
-    second: PlayerAnimations_Idle_3
+      213: -2320159554973302739
+    second: PlayerAnimations-Sheet_7
   - first:
-      213: 357083183644405462
-    second: PlayerAnimations_Idle_4
+      213: 4452082758768229781
+    second: PlayerAnimations-Sheet_8
   - first:
-      213: -1848323404289222765
-    second: PlayerAnimations_Idle_5
+      213: 2581456181699818612
+    second: PlayerAnimations-Sheet_9
   - first:
-      213: -2419790998322237971
-    second: PlayerAnimations_Jump_1
+      213: 656586644407388098
+    second: PlayerAnimations-Sheet_10
   - first:
-      213: -1562230760382329082
-    second: PlayerAnimations_Jump_2
+      213: 7611847343837501592
+    second: PlayerAnimations-Sheet_11
   - first:
-      213: -7715653188131303595
-    second: PlayerAnimations_Jump_3
+      213: -4940768002445770609
+    second: PlayerAnimations-Sheet_12
   - first:
-      213: 3487495853876744105
-    second: PlayerAnimations_Crouch_1
+      213: -1371102513469838388
+    second: PlayerAnimations-Sheet_13
   - first:
-      213: 7087000195796373856
-    second: PlayerAnimations_Crouch_2
+      213: -6505235907796330041
+    second: PlayerAnimations-Sheet_14
   - first:
-      213: -2137249069727611540
-    second: PlayerAnimations_Crouch_3
+      213: 1831840613321029213
+    second: PlayerAnimations-Sheet_15
   - first:
-      213: 3369851243064850467
-    second: PlayerAnimations_BagSmash_1
+      213: 57246918078616298
+    second: PlayerAnimations-Sheet_16
   - first:
-      213: -7580997929554956803
-    second: PlayerAnimations_BagSmash_2
+      213: -4815384604604514500
+    second: PlayerAnimations-Sheet_17
   - first:
-      213: -1730538332827738400
-    second: PlayerAnimations_BagSmash_3
+      213: 1854056296102102724
+    second: PlayerAnimations-Sheet_18
   - first:
-      213: -4436437455326748472
-    second: PlayerAnimations_BagSmash_4
+      213: -1805478879258700198
+    second: PlayerAnimations-Sheet_19
   - first:
-      213: -9147422287414637893
-    second: PlayerAnimations_BagSmash_5
+      213: 7665702470734115148
+    second: PlayerAnimations-Sheet_20
   - first:
-      213: 7696910367908737755
-    second: PlayerAnimations_BagSmash_6
+      213: 2531329613229206891
+    second: PlayerAnimations-Sheet_21
   - first:
-      213: 5370263550100658665
-    second: PlayerAnimations_BagSmash_7
+      213: 4736929736095070016
+    second: PlayerAnimations-Sheet_22
   - first:
-      213: 6284299537322964016
-    second: PlayerAnimations_BagSmash_8
+      213: 7626321667489271036
+    second: PlayerAnimations-Sheet_23
   - first:
-      213: 6266384826765312691
-    second: PlayerAnimations_SwordAttack_1
+      213: -9028396086183694906
+    second: PlayerAnimations-Sheet_24
   - first:
-      213: 613145684819576989
-    second: PlayerAnimations_SwordAttack_2
+      213: -5479968226789465837
+    second: PlayerAnimations-Sheet_25
   - first:
-      213: 1074704151961971500
-    second: PlayerAnimations_SwordAttack_3
+      213: 6294879322231284123
+    second: PlayerAnimations-Sheet_26
   - first:
-      213: 8864089873031720976
-    second: PlayerAnimations_SwordAttack_4
+      213: 8893965048589112197
+    second: PlayerAnimations-Sheet_27
   - first:
-      213: -2615683401029884796
-    second: PlayerAnimations_SwordAttack_5
+      213: 2306505485914383744
+    second: PlayerAnimations-Sheet_28
   - first:
-      213: 4653198850733080791
-    second: PlayerAnimations_BowAttack_1
+      213: 8938003450680602554
+    second: PlayerAnimations-Sheet_29
   - first:
-      213: -6279062352344715868
-    second: PlayerAnimations_BowAttack_2
+      213: -9191345182310465652
+    second: PlayerAnimations-Sheet_30
   - first:
-      213: 6187445545456413457
-    second: PlayerAnimations_BowAttack_3
+      213: -5983282317897210448
+    second: PlayerAnimations-Sheet_31
   - first:
-      213: -4451662321453060662
-    second: PlayerAnimations_BowAttack_4
+      213: -4220629974001401241
+    second: PlayerAnimations-Sheet_32
   - first:
-      213: -155364769230514775
-    second: PlayerAnimations_BowAttack_5
+      213: 6826471625195261668
+    second: PlayerAnimations-Sheet_33
   - first:
-      213: -5044792772974094070
-    second: PlayerAnimations_BowAttack_6
+      213: -7428726425407859767
+    second: PlayerAnimations-Sheet_34
   - first:
-      213: 2514998885180324254
-    second: PlayerAnimations_BowAttack_7
+      213: -7206244313721453141
+    second: PlayerAnimations-Sheet_35
   - first:
-      213: -8743103301286363547
-    second: PlayerAnimations_BowAttack_8
+      213: 6527160866394458920
+    second: PlayerAnimations-Sheet_36
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -176,7 +176,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 192
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -190,778 +202,778 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAnimations_Run_1
+      name: PlayerAnimations-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb5f0b395657b5d0800000000000000
+      internalID: -3046871681649910805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d2a9c64e96ebff0800000000000000
+      internalID: -18460918667399808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4290c253145cba550800000000000000
+      internalID: 6173244598097021220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c99cfac97818c10800000000000000
+      internalID: 2054072012091530398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e36a7b8bff494560800000000000000
+      internalID: 7298452612926039013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_5
       rect:
         serializedVersion: 2
         x: 0
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd1afbe3d65564030800000000000000
-      internalID: 3478561689882829276
+      spriteID: 273f3059a90b49e20800000000000000
+      internalID: 3356501800269378418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Run_2
+      name: PlayerAnimations-Sheet_6
       rect:
         serializedVersion: 2
         x: 32
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e71f91b803998000800000000000000
-      internalID: 38723737358374882
+      spriteID: 35c92b6f9f6eb2710800000000000000
+      internalID: 1669682048131046483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Run_3
+      name: PlayerAnimations-Sheet_7
       rect:
         serializedVersion: 2
         x: 64
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3f1afafb051110260800000000000000
-      internalID: 7061944729204662771
+      spriteID: d20869f6d232dcfd0800000000000000
+      internalID: -2320159554973302739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Run_4
+      name: PlayerAnimations-Sheet_8
       rect:
         serializedVersion: 2
         x: 96
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5c1f8523a71d0170800000000000000
-      internalID: 8146193290460339292
+      spriteID: 59d75035ea9f8cd30800000000000000
+      internalID: 4452082758768229781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Run_5
+      name: PlayerAnimations-Sheet_9
       rect:
         serializedVersion: 2
         x: 128
         y: 160
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f947c279ec15274a0800000000000000
-      internalID: -6597120556402969441
+      spriteID: 474347958bc23d320800000000000000
+      internalID: 2581456181699818612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Idle_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7942893c896733cd0800000000000000
-      internalID: -2579587763064527721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_Idle_2
+      name: PlayerAnimations-Sheet_10
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2ffceb88b6fa59b80800000000000000
-      internalID: -8388605854517112846
+      spriteID: 2c70b28031aac1900800000000000000
+      internalID: 656586644407388098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Idle_3
+      name: PlayerAnimations-Sheet_11
       rect:
         serializedVersion: 2
         x: 32
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 289f2ee5bd066b400800000000000000
-      internalID: 339565317219088770
+      spriteID: 8985fe574d6b2a960800000000000000
+      internalID: 7611847343837501592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Idle_4
+      name: PlayerAnimations-Sheet_12
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6dee36c734d94f400800000000000000
-      internalID: 357083183644405462
+      spriteID: f808a98ddadde6bb0800000000000000
+      internalID: -4940768002445770609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 397dc4918af6956e0800000000000000
-      internalID: -1848323404289222765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_Jump_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: deda05a58ec2b6ed0800000000000000
-      internalID: -2419790998322237971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_Jump_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60f09368667d15ae0800000000000000
-      internalID: -1562230760382329082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_Jump_3
+      name: PlayerAnimations-Sheet_13
       rect:
         serializedVersion: 2
         x: 0
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 55fc25ffd4e7ce490800000000000000
-      internalID: -7715653188131303595
+      spriteID: ccb2cf5478dd8fce0800000000000000
+      internalID: -1371102513469838388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Crouch_1
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9af88f56003166030800000000000000
-      internalID: 3487495853876744105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_Crouch_2
+      name: PlayerAnimations-Sheet_14
       rect:
         serializedVersion: 2
         x: 32
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 061119921251a5260800000000000000
-      internalID: 7087000195796373856
+      spriteID: 7c91fa77862c8b5a0800000000000000
+      internalID: -6505235907796330041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_Crouch_3
+      name: PlayerAnimations-Sheet_15
       rect:
         serializedVersion: 2
         x: 64
         y: 96
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c650a527b47f652e0800000000000000
-      internalID: -2137249069727611540
+      spriteID: d56322215510c6910800000000000000
+      internalID: 1831840613321029213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_1
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 328f9c0f9dd14ce20800000000000000
-      internalID: 3369851243064850467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfda7e58c82eac690800000000000000
-      internalID: -7580997929554956803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_3
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ee1b991e84ebf7e0800000000000000
-      internalID: -1730538332827738400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_4
+      name: PlayerAnimations-Sheet_16
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8c0e20fb3ab9e62c0800000000000000
-      internalID: -4436437455326748472
+      spriteID: ae2df88c4c16bc000800000000000000
+      internalID: 57246918078616298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_5
+      name: PlayerAnimations-Sheet_17
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bbac82c05e3dd0180800000000000000
-      internalID: -9147422287414637893
+      spriteID: c3fb9a117315c2db0800000000000000
+      internalID: -4815384604604514500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_6
+      name: PlayerAnimations-Sheet_18
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bd2b83b133be0da60800000000000000
-      internalID: 7696910367908737755
+      spriteID: 4c60ebac06eeab910800000000000000
+      internalID: 1854056296102102724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_7
+      name: PlayerAnimations-Sheet_19
       rect:
         serializedVersion: 2
         x: 96
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e95af5fe32078a40800000000000000
-      internalID: 5370263550100658665
+      spriteID: a5690507686a1f6e0800000000000000
+      internalID: -1805478879258700198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BagSmash_8
+      name: PlayerAnimations-Sheet_20
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03479403221563750800000000000000
-      internalID: 6284299537322964016
+      spriteID: c41f0f158cb026a60800000000000000
+      internalID: 7665702470734115148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_SwordAttack_1
+      name: PlayerAnimations-Sheet_21
       rect:
         serializedVersion: 2
         x: 160
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b28e399ccba6f650800000000000000
-      internalID: 6266384826765312691
+      spriteID: b6d24f52fd6112320800000000000000
+      internalID: 2531329613229206891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_SwordAttack_2
+      name: PlayerAnimations-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0477ee56f74fcb140800000000000000
+      internalID: 4736929736095070016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc009d862326d960800000000000000
+      internalID: 7626321667489271036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_24
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d980c3370c4528800800000000000000
-      internalID: 613145684819576989
+      spriteID: 6cd6e771891b4b280800000000000000
+      internalID: -9028396086183694906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_SwordAttack_3
+      name: PlayerAnimations-Sheet_25
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2ba4507bbd1aee00800000000000000
-      internalID: 1074704151961971500
+      spriteID: 31169cd8eed33f3b0800000000000000
+      internalID: -5479968226789465837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_SwordAttack_4
+      name: PlayerAnimations-Sheet_26
       rect:
         serializedVersion: 2
         x: 64
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 010713b86c2930b70800000000000000
-      internalID: 8864089873031720976
+      spriteID: b912c815467eb5750800000000000000
+      internalID: 6294879322231284123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_SwordAttack_5
+      name: PlayerAnimations-Sheet_27
       rect:
         serializedVersion: 2
         x: 96
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4846ab42ec933bbd0800000000000000
-      internalID: -2615683401029884796
+      spriteID: 583d4e5e616bd6b70800000000000000
+      internalID: 8893965048589112197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_1
+      name: PlayerAnimations-Sheet_28
       rect:
         serializedVersion: 2
         x: 128
         y: 32
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d0833773bb739040800000000000000
-      internalID: 4653198850733080791
+      spriteID: 085aa60e48a520020800000000000000
+      internalID: 2306505485914383744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_2
+      name: PlayerAnimations-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf680768ca2a0c70800000000000000
+      internalID: 8938003450680602554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ff2682148c17080800000000000000
+      internalID: -9191345182310465652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b56cd2ce6c17fca0800000000000000
+      internalID: -5983282317897210448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762c747866f4d65c0800000000000000
+      internalID: -4220629974001401241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee0c0166cf7cbe50800000000000000
+      internalID: 6826471625195261668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerAnimations-Sheet_34
       rect:
         serializedVersion: 2
         x: 160
-        y: 32
+        y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4ade6f5fe0a4cd8a0800000000000000
-      internalID: -6279062352344715868
+      spriteID: 9c3d108dcacd7e890800000000000000
+      internalID: -7428726425407859767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_3
+      name: PlayerAnimations-Sheet_35
       rect:
         serializedVersion: 2
-        x: 0
+        x: 192
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 11ba00ce0f83ed550800000000000000
-      internalID: 6187445545456413457
+      spriteID: ba544fb1af64efb90800000000000000
+      internalID: -7206244313721453141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_4
+      name: PlayerAnimations-Sheet_36
       rect:
         serializedVersion: 2
-        x: 32
+        x: 224
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: acdaccd54b48832c0800000000000000
-      internalID: -4451662321453060662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a59767c09808ddf0800000000000000
-      internalID: -155364769230514775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a09db6193bb4df9b0800000000000000
-      internalID: -5044792772974094070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e993da9392217e220800000000000000
-      internalID: 2514998885180324254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerAnimations_BowAttack_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56ef744ded14aa680800000000000000
-      internalID: -8743103301286363547
+      spriteID: 82bc541c932259a50800000000000000
+      internalID: 6527160866394458920
       vertices: []
       indices: 
       edges: []

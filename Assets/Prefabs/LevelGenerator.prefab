@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412559096639849998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -46,7 +46,6 @@ MonoBehaviour:
   levelWidth: 7
   levelHeight: 7
   scale: 10
-  roomContainer: {fileID: 0}
   startingRooms:
   - {fileID: 6883211529688409317, guid: 009a3ed57cf3fbd458ac12ee2974947c, type: 3}
   pathRooms:
@@ -56,7 +55,10 @@ MonoBehaviour:
   - {fileID: 6728699039738687974, guid: 97339dd4e65a3344eb10587ab743b5cd, type: 3}
   fillerRooms:
   - {fileID: 4186368881736879259, guid: 911f6284bd59a87408bb13db68394499, type: 3}
+  specialRooms:
+  - {fileID: 5130654290804916710, guid: 2a6d12d87462df44c9510d61fcb49d32, type: 3}
   endingRooms:
   - {fileID: 3777610113651677224, guid: 90a22fe2898481943bb0095d399ab96d, type: 3}
   roomGenDelayTimer: 0
+  customSeed: 0
   seed: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class PlayerMovement : PlayerController
@@ -19,6 +20,7 @@ public class PlayerMovement : PlayerController
     private void UpdatePlayer()
     {
         UpdatePlayerFacing();
+        Crouch();
         // TODO: Convert to the new input system
         float pSpeed = Input.GetAxis("Horizontal");
 
@@ -64,19 +66,35 @@ public class PlayerMovement : PlayerController
     
     private void UpdatePlayerFacing()
     {
-        sprite.flipX = !facingRight;
+        if (facingRight) transform.localScale = new Vector3(1, 1, 1);
+        if (facingRight == false) transform.localScale = new Vector3(-1, 1, 1);
     }
 
     private void ChangeCam()
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            mainCamera.orthographicSize = 8;
+            mainCamera.m_Lens.OrthographicSize = 7.5f;
         }
 
         if (Input.GetKey(KeyCode.Alpha2))
         {
-            mainCamera.orthographicSize = 25;
+            mainCamera.m_Lens.OrthographicSize = 25f;
+        }
+    }
+
+    private void Crouch()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
+                new Vector3(0, -7, 0);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
+                Vector3.zero;
         }
     }
 }

@@ -13,13 +13,14 @@ public class LevelGeneration : MonoBehaviour
     [SerializeField] private GameObject[] startingRooms;
     [SerializeField] private GameObject[] pathRooms; //Critical path rooms 0:LR, 1:LRB, 2:LRT, 3:LRTB
     [SerializeField] private GameObject[] fillerRooms;
+    [SerializeField] private GameObject[] specialRooms;
     [SerializeField] private GameObject[] endingRooms;
 
     private Transform roomContainer;
 
     private GameObject[,] roomArray;
     private List<Vector2> loadedRooms = new List<Vector2>();
-    
+
     [SerializeField] private float roomGenDelayTimer = 0.25f;
 
     public static bool firstStageDone = false;
@@ -28,6 +29,8 @@ public class LevelGeneration : MonoBehaviour
     private int direction; // 0 & 1: Right, 2 & 3: Left, 4: Down
     private float delay = 0f;
     private float completionTime = 0f;
+
+    private bool canSpecialSpawn = true;
 
     private Tilemap tilemap;
 
@@ -46,7 +49,7 @@ public class LevelGeneration : MonoBehaviour
 
         roomArray = new GameObject[levelWidth, levelHeight];
 
-        if(customSeed == false)
+        if (customSeed == false)
             seed = Random.Range(0, int.MaxValue);
 
         Random.InitState(seed);
@@ -58,10 +61,12 @@ public class LevelGeneration : MonoBehaviour
          */
         if (roomContainer.childCount > 1)
         {
-            foreach (Transform child in roomContainer.transform) {
+            foreach (Transform child in roomContainer.transform)
+            {
                 Destroy(child.gameObject);
             }
         }
+
         CreateRoom(startingRooms[0]);
 
         if (transform.position.x == 0)
@@ -74,12 +79,13 @@ public class LevelGeneration : MonoBehaviour
 
     private void Update()
     {
-        if(!firstStageDone) completionTime += Time.deltaTime;
+        if (!firstStageDone) completionTime += Time.deltaTime;
         if (!firstStageDone && delay <= 0)
         {
             delay = roomGenDelayTimer;
             if (direction == 0 || direction == 1)
-            { // Right
+            {
+                // Right
                 if (transform.position.x < levelWidth - 1)
                 {
                     transform.position += Vector3.right;
@@ -95,7 +101,8 @@ public class LevelGeneration : MonoBehaviour
                     direction = 4;
             }
             else if (direction == 2 || direction == 3)
-            { // Left
+            {
+                // Left
                 if (transform.position.x > 0)
                 {
                     transform.position += Vector3.left;
@@ -111,7 +118,8 @@ public class LevelGeneration : MonoBehaviour
                     direction = 4;
             }
             else if (direction == 4)
-            { // Down
+            {
+                // Down
                 if (transform.position.y > -levelHeight + 1)
                 {
                     Destroy(GetRoom(transform.position));
@@ -144,14 +152,16 @@ public class LevelGeneration : MonoBehaviour
                         direction = Random.Range(0, 4);
                 }
                 else
-                { // If trying to generate another room down and fail means we are at the bottom
+                {
+                    // If trying to generate another room down and fail means we are at the bottom
                     Destroy(GetRoom(transform.position));
                     CreateRoom(endingRooms[0]);
+                    FillSpecialRooms();
                     FillMap();
                     firstStageDone = true;
                     readyForPlayer = true;
-                    Debug.Log("Completion Time in seconds: " + completionTime + " seconds" + "\n" + "Completion Time in milliseconds: " + completionTime * 1000);
-                    Destroy(gameObject);
+                    Debug.Log("Completion Time in seconds: " + completionTime + " seconds" + "\n" +
+                              "Completion Time in milliseconds: " + completionTime * 1000);
                 }
             }
         }
@@ -167,10 +177,39 @@ public class LevelGeneration : MonoBehaviour
     private void CreateRoom(GameObject room)
     {
         GameObject temp = Instantiate(room, transform.position * scale, Quaternion.identity, roomContainer);
-        int x = (int)transform.position.x;
-        int y = -(int)transform.position.y;
+        int x = (int) transform.position.x;
+        int y = -(int) transform.position.y;
         roomArray[x, y] = temp;
         loadedRooms.Add(new Vector2(x, y));
+    }
+
+    private void FillSpecialRooms()
+    {
+        // Generate the special room(s)
+        Vector2 pos = FindEmptyRoom();
+
+        if (!loadedRooms.Contains(new Vector2(pos.x, pos.y)))
+        {
+            if (canSpecialSpawn)
+            {
+                canSpecialSpawn = false;
+                int rand = Random.Range(0, specialRooms.Length);
+                transform.position = new Vector2(pos.x, -pos.y);
+                CreateRoom(specialRooms[rand]);
+            }
+        }
+    }
+
+    private Vector2 FindEmptyRoom()
+    {
+        int x = Random.Range(0, levelWidth);
+        int y = Random.Range(0, levelHeight);
+        Vector2 pos = new Vector2(x, y);
+        if (!loadedRooms.Contains(new Vector2(x, y)))
+        {
+            return pos;
+        }
+        return FindEmptyRoom();
     }
 
     private void FillMap()
@@ -192,13 +231,14 @@ public class LevelGeneration : MonoBehaviour
 
     private GameObject GetRoom(Vector2 pos)
     {
-        return roomArray[(int)pos.x, -(int)pos.y];
+        return roomArray[(int) pos.x, -(int) pos.y];
     }
 
     public int getLevelWidth()
     {
         return levelWidth;
     }
+
     public int getLevelHeigth()
     {
         return levelHeight;

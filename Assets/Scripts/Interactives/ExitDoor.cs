@@ -17,7 +17,15 @@ public class ExitDoor : MonoBehaviour
 
     public void NextLevel()
     {
+        Destroy(FindObjectOfType<LevelGeneration>());
         Instantiate(levelGenerator, transform.root.parent);
+    }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            NextLevel();
+        }
     }
 }
