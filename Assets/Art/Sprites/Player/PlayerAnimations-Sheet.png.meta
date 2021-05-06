@@ -4,115 +4,115 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3046871681649910805
-    second: PlayerAnimations-Sheet_0
+    second: Walk_0
   - first:
       213: -18460918667399808
-    second: PlayerAnimations-Sheet_1
+    second: Walk_1
   - first:
       213: 6173244598097021220
-    second: PlayerAnimations-Sheet_2
+    second: Walk_2
   - first:
       213: 2054072012091530398
-    second: PlayerAnimations-Sheet_3
+    second: Walk_3
   - first:
       213: 7298452612926039013
-    second: PlayerAnimations-Sheet_4
+    second: Walk_4
   - first:
       213: 3356501800269378418
-    second: PlayerAnimations-Sheet_5
+    second: Idle_0
   - first:
       213: 1669682048131046483
-    second: PlayerAnimations-Sheet_6
+    second: Idle_1
   - first:
       213: -2320159554973302739
-    second: PlayerAnimations-Sheet_7
+    second: Idle_2
   - first:
       213: 4452082758768229781
-    second: PlayerAnimations-Sheet_8
+    second: Idle_3
   - first:
       213: 2581456181699818612
-    second: PlayerAnimations-Sheet_9
+    second: Idle_4
   - first:
       213: 656586644407388098
-    second: PlayerAnimations-Sheet_10
+    second: Jump_0
   - first:
       213: 7611847343837501592
-    second: PlayerAnimations-Sheet_11
+    second: Jump_1
   - first:
       213: -4940768002445770609
-    second: PlayerAnimations-Sheet_12
+    second: Jump_2
   - first:
       213: -1371102513469838388
-    second: PlayerAnimations-Sheet_13
+    second: Crouch_0
   - first:
       213: -6505235907796330041
-    second: PlayerAnimations-Sheet_14
+    second: Crouch_1
   - first:
       213: 1831840613321029213
-    second: PlayerAnimations-Sheet_15
+    second: Crouch_2
   - first:
       213: 57246918078616298
-    second: PlayerAnimations-Sheet_16
+    second: Bag_0
   - first:
       213: -4815384604604514500
-    second: PlayerAnimations-Sheet_17
+    second: Bag_1
   - first:
       213: 1854056296102102724
-    second: PlayerAnimations-Sheet_18
+    second: Bag_2
   - first:
       213: -1805478879258700198
-    second: PlayerAnimations-Sheet_19
+    second: Bag_3
   - first:
       213: 7665702470734115148
-    second: PlayerAnimations-Sheet_20
+    second: Bag_4
   - first:
       213: 2531329613229206891
-    second: PlayerAnimations-Sheet_21
+    second: Bag_5
   - first:
       213: 4736929736095070016
-    second: PlayerAnimations-Sheet_22
+    second: Bag_6
   - first:
       213: 7626321667489271036
-    second: PlayerAnimations-Sheet_23
+    second: Bag_7
   - first:
       213: -9028396086183694906
-    second: PlayerAnimations-Sheet_24
+    second: Melee_0
   - first:
       213: -5479968226789465837
-    second: PlayerAnimations-Sheet_25
+    second: Melee_1
   - first:
       213: 6294879322231284123
-    second: PlayerAnimations-Sheet_26
+    second: Melee_2
   - first:
       213: 8893965048589112197
-    second: PlayerAnimations-Sheet_27
+    second: Melee_3
   - first:
       213: 2306505485914383744
-    second: PlayerAnimations-Sheet_28
+    second: Melee_4
   - first:
       213: 8938003450680602554
-    second: PlayerAnimations-Sheet_29
+    second: Range_0
   - first:
       213: -9191345182310465652
-    second: PlayerAnimations-Sheet_30
+    second: Range_1
   - first:
       213: -5983282317897210448
-    second: PlayerAnimations-Sheet_31
+    second: Range_2
   - first:
       213: -4220629974001401241
-    second: PlayerAnimations-Sheet_32
+    second: Range_3
   - first:
       213: 6826471625195261668
-    second: PlayerAnimations-Sheet_33
+    second: Range_4
   - first:
       213: -7428726425407859767
-    second: PlayerAnimations-Sheet_34
+    second: Range_5
   - first:
       213: -7206244313721453141
-    second: PlayerAnimations-Sheet_35
+    second: Range_6
   - first:
       213: 6527160866394458920
-    second: PlayerAnimations-Sheet_36
+    second: Range_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -202,7 +202,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_0
+      name: Walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -223,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_1
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 32
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_2
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 64
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_3
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 96
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_4
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 128
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_5
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_6
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_7
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_8
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_9
+      name: Idle_4
       rect:
         serializedVersion: 2
         x: 128
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_10
+      name: Jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -433,7 +433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_11
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 32
@@ -454,7 +454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_12
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 64
@@ -475,7 +475,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_13
+      name: Crouch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -496,7 +496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_14
+      name: Crouch_1
       rect:
         serializedVersion: 2
         x: 32
@@ -517,7 +517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_15
+      name: Crouch_2
       rect:
         serializedVersion: 2
         x: 64
@@ -538,7 +538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_16
+      name: Bag_0
       rect:
         serializedVersion: 2
         x: 0
@@ -559,7 +559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_17
+      name: Bag_1
       rect:
         serializedVersion: 2
         x: 32
@@ -580,7 +580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_18
+      name: Bag_2
       rect:
         serializedVersion: 2
         x: 64
@@ -601,7 +601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_19
+      name: Bag_3
       rect:
         serializedVersion: 2
         x: 96
@@ -622,7 +622,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_20
+      name: Bag_4
       rect:
         serializedVersion: 2
         x: 128
@@ -643,7 +643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_21
+      name: Bag_5
       rect:
         serializedVersion: 2
         x: 160
@@ -664,7 +664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_22
+      name: Bag_6
       rect:
         serializedVersion: 2
         x: 192
@@ -685,7 +685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_23
+      name: Bag_7
       rect:
         serializedVersion: 2
         x: 224
@@ -706,7 +706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_24
+      name: Melee_0
       rect:
         serializedVersion: 2
         x: 0
@@ -727,7 +727,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_25
+      name: Melee_1
       rect:
         serializedVersion: 2
         x: 32
@@ -748,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_26
+      name: Melee_2
       rect:
         serializedVersion: 2
         x: 64
@@ -769,7 +769,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_27
+      name: Melee_3
       rect:
         serializedVersion: 2
         x: 96
@@ -790,7 +790,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_28
+      name: Melee_4
       rect:
         serializedVersion: 2
         x: 128
@@ -811,7 +811,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_29
+      name: Range_0
       rect:
         serializedVersion: 2
         x: 0
@@ -832,7 +832,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_30
+      name: Range_1
       rect:
         serializedVersion: 2
         x: 32
@@ -853,7 +853,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_31
+      name: Range_2
       rect:
         serializedVersion: 2
         x: 64
@@ -874,7 +874,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_32
+      name: Range_3
       rect:
         serializedVersion: 2
         x: 96
@@ -895,7 +895,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_33
+      name: Range_4
       rect:
         serializedVersion: 2
         x: 128
@@ -916,7 +916,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_34
+      name: Range_5
       rect:
         serializedVersion: 2
         x: 160
@@ -937,7 +937,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_35
+      name: Range_6
       rect:
         serializedVersion: 2
         x: 192
@@ -958,7 +958,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerAnimations-Sheet_36
+      name: Range_7
       rect:
         serializedVersion: 2
         x: 224

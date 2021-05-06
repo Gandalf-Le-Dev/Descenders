@@ -6,10 +6,7 @@ using UnityEngine;
 public class PlayerMovement : PlayerController
 {
     [SerializeField] private int playerSpeed;
-
     [SerializeField] private int playerJumpHeight;
-
-    private bool facingRight = true;
 
     private void Update()
     {
@@ -20,7 +17,9 @@ public class PlayerMovement : PlayerController
     private void UpdatePlayer()
     {
         UpdatePlayerFacing();
+        UpdateAnimations();
         Crouch();
+
         // TODO: Convert to the new input system
         float pSpeed = Input.GetAxis("Horizontal");
 
@@ -56,18 +55,51 @@ public class PlayerMovement : PlayerController
             crouched = false;
         }
 
+        /*
+         * Is player facing right
+         */
         if (velocity.x > 0)
             facingRight = true;
-        else if (velocity.x < 0) 
+        else if (velocity.x < 0)
             facingRight = false;
+
+        /*
+         * Is player walking
+         */
+        if (velocity.x != 0 && grounded) isWalking = true;
+        else isWalking = false;
 
         targetVelocity = move * playerSpeed;
     }
-    
+
+    private void Crouch()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            crouched = true;
+            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
+                new Vector3(0, -7, 0);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            crouched = false;
+            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
+                Vector3.zero;
+        }
+    }
+
     private void UpdatePlayerFacing()
     {
         if (facingRight) transform.localScale = new Vector3(1, 1, 1);
         if (facingRight == false) transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    private void UpdateAnimations()
+    {
+        anim.SetBool("isWalking", isWalking);
+        anim.SetBool("isGrounded", grounded);
+        anim.SetFloat("yVelocity", velocity.y);
     }
 
     private void ChangeCam()
@@ -80,21 +112,6 @@ public class PlayerMovement : PlayerController
         if (Input.GetKey(KeyCode.Alpha2))
         {
             mainCamera.m_Lens.OrthographicSize = 25f;
-        }
-    }
-
-    private void Crouch()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
-                new Vector3(0, -7, 0);
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
-                Vector3.zero;
         }
     }
 }

@@ -12,9 +12,12 @@ public class PlayerController : MonoBehaviour
     protected Vector2 targetVelocity;
     protected bool grounded;
     protected bool crouched;
+    protected bool facingRight = true;
+    protected bool isWalking = false;
     protected Vector2 groundNormal;
     protected Rigidbody2D rb;
     protected SpriteRenderer sprite;
+    protected Animator anim;
     protected Vector2 velocity;
     protected ContactFilter2D contactFilter;
     protected RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         mainCamera = FindObjectOfType<CinemachineVirtualCamera>();
     }
 
@@ -44,12 +48,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity();
-    }
-
-    protected virtual void ComputeVelocity()
-    {
-        
     }
 
     private void FixedUpdate()
