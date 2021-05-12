@@ -1,117 +1,174 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using Cinemachine;
 using UnityEngine;
 
-public class PlayerMovement : PlayerController
+namespace Player
 {
-    [SerializeField] private int playerSpeed;
-    [SerializeField] private int playerJumpHeight;
-
-    private void Update()
+    public class PlayerMovement : MonoBehaviour
     {
-        UpdatePlayer();
-        ChangeCam();
-    }
+        private float movementInputDirection;
 
-    private void UpdatePlayer()
-    {
-        UpdatePlayerFacing();
-        UpdateAnimations();
-        Crouch();
+        private int amountJumpLeft;
 
-        // TODO: Convert to the new input system
-        float pSpeed = Input.GetAxis("Horizontal");
+        private bool isFacingRight = true;
+        private bool isWalking = false;
+        private bool isGrounded = false;
+        private bool canJump = true;
+        private bool isTouchingWall = false;
+        private bool isWallSliding = false;
 
-        Vector2 move = Vector2.zero;
+        private Rigidbody2D rb;
+        private Animator anim;
+        private CinemachineVirtualCamera mainCamera;
 
-        // Move
-        if (!crouched && !Input.GetKey(KeyCode.LeftControl))
-            move.x = Input.GetAxis("Horizontal");
-        // Sprint
-        else if(!crouched && Input.GetKey(KeyCode.LeftControl))
-            move.x = Input.GetAxis("Horizontal") * 2;
-        // Jump
-        if (Input.GetButton("Jump") && grounded)
+        [SerializeField] private float movementSpeed = 10.0f;
+        [SerializeField] private float jumpForce = 16.0f;
+        [SerializeField] private float groundCheckRadius = 1f;
+        [SerializeField] private float wallCheckDistance = 1f;
+        [SerializeField] private float wallSlideSpeed = 1f;
+
+        [SerializeField] private int maxJumps = 1;
+
+        [SerializeField] private Transform groundCheck;
+        [SerializeField] private Transform wallCheck;
+
+        [SerializeField] private LayerMask groundMask;
+
+        private void OnEnable()
         {
-            if (Mathf.Abs(velocity.x) > 0)
+            mainCamera = FindObjectOfType<CinemachineVirtualCamera>();
+            mainCamera.m_Follow = transform;
+        }
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+            amountJumpLeft = maxJumps;
+        }
+
+        private void Update()
+        {
+            // Check
+            CheckInputs();
+            CheckMovementDirection();
+            CheckCanJump();
+            CheckWallSlide();
+
+            // Update
+            UpdateAnimations();
+        }
+
+        private void FixedUpdate()
+        {
+            ApplyMovement();
+            CheckSurroundings();
+        }
+
+        private void CheckSurroundings()
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
+            isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, groundMask);
+        }
+
+        private void CheckInputs()
+        {
+            movementInputDirection = Input.GetAxisRaw("Horizontal");
+
+            if (Input.GetButtonDown("Jump"))
             {
-                velocity.y = playerJumpHeight + Mathf.Abs(velocity.x * 0.2f);
+                Jump();
+            }
+        }
+
+        /*
+         * MOVEMENT
+         */
+        private void ApplyMovement()
+        {
+            rb.velocity = new Vector2(movementSpeed * movementInputDirection, rb.velocity.y);
+            if (isWallSliding)
+            {
+                if (rb.velocity.y < -wallSlideSpeed)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
+                }
+            }
+        }
+
+        private void CheckMovementDirection()
+        {
+            // Flip the character
+            if (isFacingRight && movementInputDirection < 0) Flip();
+            else if (!isFacingRight && movementInputDirection > 0) Flip();
+
+            // Update isWalking bool
+            if (rb.velocity.x != 0) isWalking = true;
+            else isWalking = false;
+        }
+
+        /*
+         * ACTIONS
+         */
+        private void CheckCanJump()
+        {
+            if (isGrounded && rb.velocity.y <= 0)
+            {
+                amountJumpLeft = maxJumps;
+            }
+
+            if (amountJumpLeft <= 0)
+            {
+                canJump = false;
             }
             else
             {
-                velocity.y = playerJumpHeight;
+                canJump = true;
             }
         }
-        else if (Input.GetButtonDown("Jump"))
+
+        private void Jump()
         {
-            if (velocity.y > 0)
+            if (canJump){
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                amountJumpLeft--;
+            }
+        }
+
+        private void CheckWallSlide()
+        {
+            if (isTouchingWall && !isGrounded && rb.velocity.y <= 0)
             {
-                velocity.y *= 0.5f;
+                isWallSliding = true;
+            }
+            else
+            {
+                isWallSliding = false;
             }
         }
-        else
-        {
-            crouched = false;
-        }
 
         /*
-         * Is player facing right
+         * MISCELLANEOUS
          */
-        if (velocity.x > 0)
-            facingRight = true;
-        else if (velocity.x < 0)
-            facingRight = false;
-
-        /*
-         * Is player walking
-         */
-        if (velocity.x != 0 && grounded) isWalking = true;
-        else isWalking = false;
-
-        targetVelocity = move * playerSpeed;
-    }
-
-    private void Crouch()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        private void UpdateAnimations()
         {
-            crouched = true;
-            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
-                new Vector3(0, -7, 0);
+            anim.SetBool("isWalking", isWalking);
+            anim.SetBool("isGrounded", isGrounded);
+            anim.SetBool("isWallSliding", isWallSliding);
+
+            anim.SetFloat("yVelocity", rb.velocity.y);
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        private void Flip()
         {
-            crouched = false;
-            mainCamera.GetCinemachineComponent<CinemachineFramingTransposer>().m_TrackedObjectOffset =
-                Vector3.zero;
-        }
-    }
-
-    private void UpdatePlayerFacing()
-    {
-        if (facingRight) transform.localScale = new Vector3(1, 1, 1);
-        if (facingRight == false) transform.localScale = new Vector3(-1, 1, 1);
-    }
-
-    private void UpdateAnimations()
-    {
-        anim.SetBool("isWalking", isWalking);
-        anim.SetBool("isGrounded", grounded);
-        anim.SetFloat("yVelocity", velocity.y);
-    }
-
-    private void ChangeCam()
-    {
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            mainCamera.m_Lens.OrthographicSize = 7.5f;
+            isFacingRight = !isFacingRight;
+            transform.Rotate(0f, 180f, 0f);
         }
 
-        if (Input.GetKey(KeyCode.Alpha2))
+        private void OnDrawGizmos()
         {
-            mainCamera.m_Lens.OrthographicSize = 25f;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
         }
     }
 }
